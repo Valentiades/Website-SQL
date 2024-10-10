@@ -1,0 +1,217 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-content {
+    position: relative;
+    top: 30px;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: #f1f3f8;
+    border: 0.1em solid #b7d5fa79;
+    border-radius: 25px;
+    filter: drop-shadow(0.1em 0.5em 0.3rem #6899d198);
+}
+
+.admin-content-header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.back {
+    position: relative;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    max-width: 200px;
+    padding: 10px 15px;
+    background-color: #9796f0;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .back:hover {
+    background-color: #8584d8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+
+.admin-content-header h2 {
+    color: #9796f0;
+    filter: drop-shadow(0 0.1rem 0.2rem #d4d3fa);
+    text-shadow: 0 0 5px #eae9fc;
+    margin: 0;
+    font-weight: 600;
+    font-size: clamp(1.9rem, 4vw, 2.1rem);
+}
+
+.admin-content-body {
+    padding: 20px;
+}
+
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #9796f0;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #9796f0;
+    box-shadow: 0 0 0 2px rgba(151, 150, 240, 0.2);
+}
+
+.form-group select {
+    position: relative;
+    width: 35%;
+    padding: 5px;
+    max-width: 300px;
+    background-color: #f3f3f3;
+    filter: drop-shadow(0 0 0.4em #afc7e25b);
+    color: #9796f0;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
+    cursor: pointer;
+    background-position: right 12px center;
+    padding-right: 30px;
+    border-radius: 15px;
+}
+
+.form-group select option {
+    padding: 8px;
+    background-color: #f3f3f3;
+    color: #9796f0;
+    border-radius: 25px;
+}
+
+.form-group select option:hover,
+.form-group select option:focus {
+    background-color: #afaef4;
+    color: #f2faff;
+}
+
+.admin-btn {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    width: 80%;
+    max-width: 200px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    background-color: #9796f0;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.admin-btn:hover {
+    background-color: #8584d8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.profile-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-image-preview {
+    position: relative;
+    bottom: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #cbcaf0;
+}
+
+.profile-image-upload-label {
+    width: 50%;
+    max-width: 200px;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-image-upload-label:hover {
+    background-color: #eaeaf8;
+}
+.profile-image-upload-label i {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .admin-content {
+        padding: 20px;
+    }
+    
+    .admin-form {
+        width: 100%;
+    }
+    
+    .form-group input,
+    .form-group select {
+        max-width: 100%;
+    }
+}

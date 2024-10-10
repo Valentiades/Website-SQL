@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+  
+  }
+
+.form-box {
+    width: 380px;
+    height: 470px;
+    position: relative;
+    margin: 6% auto;
+    background-color: rgba(255, 255, 255, 0.105);
+    border: 1px solid rgba(255, 255, 255, 0.196);
+    backdrop-filter: blur(10px);
+    padding: 5px;
+    border-radius: 2em;
+    overflow: hidden;
+  }
+
+h1 {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 0 0 5px #000;
+  }
+
+img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center; 
+    margin: 5px auto;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    display: block; 
+    border: 3px solid #fff; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+    font-size: 12px;
+    width: 30%;
+    padding: 10px 50px;
+    cursor: pointer;
+    display: block;
+    margin: 5px auto;
+    color: #000;
+    background: #fff;
+    border: #fff;
+    outline: none;
+    border-radius: 30px;
+    border: 2px solid transparent;
+}
+
+.custom-file-upload:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.input-group {
+    right: 53px;
+    top: 100px;
+    position: absolute;
+    width: 280px;
+  }
+
+h4 {
+    text-align: center;
+    margin: 20px 0;
+    margin-bottom: -15px;
+    color: #fff;
+    font-size: 24px;
+    text-shadow: 0 0 5px #000;
+  }
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    left: -20px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 50px;
+    cursor: pointer;
+    display: block;
+    margin: 15px auto;
+    color: #000;
+    background: #fff;
+    border: #fff;
+    outline: none;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+
+.home {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+}
